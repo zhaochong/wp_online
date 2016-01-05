@@ -1,0 +1,27 @@
+[ 2016-01-04T14:53:21+08:00 ] 122.235.245.67 /index.php?s=/addon/Vote/Vote/lists.html&mdm=17
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weiphp.wp_vote' doesn't exist
+
+[ 2016-01-04T14:53:33+08:00 ] 122.235.245.67 /index.php?s=/addon/Vote/Vote/lists.html&mdm=17
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weiphp.wp_vote' doesn't exist
+
+[ 2016-01-04T14:53:50+08:00 ] 122.235.245.67 /index.php?s=/addon/Vote/Vote/lists.html
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weiphp.wp_vote' doesn't exist
+
+[ 2016-01-04T14:54:25+08:00 ] 122.235.245.67 /index.php?s=/addon/Vote/Vote/lists.html&mdm=17|18
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weiphp.wp_vote' doesn't exist
+
+[ 2016-01-04T14:57:17+08:00 ] 122.235.245.67 /index.php?s=/addon/Vote/ShopVote/lists.html&mdm=17|345
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weiphp.wp_shop_vote' doesn't exist
+
+[ 2016-01-04T14:58:27+08:00 ] 122.235.245.67 /index.php?s=/addon/Vote/Vote/lists.html&mdm=17
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weiphp.wp_vote' doesn't exist
+
+[ 2016-01-04T14:58:34+08:00 ] 122.235.245.67 /index.php?s=/addon/Vote/Vote/lists.html&mdm=17
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weiphp.wp_vote' doesn't exist
+
+[ 2016-01-04T14:58:48+08:00 ] 122.235.245.67 /index.php?s=/addon/Invite/Invite/
+ERR: Think\Controller:方法不存在！
+
+[ 2016-01-04T16:09:36+08:00 ] 122.235.245.67 /index.php?s=/addon/Vote/Vote/lists.html&mdm=17
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weiphp.wp_vote' doesn't exist
+
