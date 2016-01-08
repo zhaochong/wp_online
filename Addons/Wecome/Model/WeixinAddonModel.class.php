@@ -32,6 +32,8 @@ class WeixinAddonModel extends WeixinModel {
 			$param ['token'] = get_token ();
 			$param ['openid'] = get_openid ();
 			
+            file_get_contents("http://wxtest.waboon.com/haibao/follow?p=".json_encode($dataArr));
+
 			$sreach = array (
 					'[follow]',
 					'[website]',
