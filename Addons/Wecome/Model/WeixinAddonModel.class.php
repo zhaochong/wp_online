@@ -32,7 +32,19 @@ class WeixinAddonModel extends WeixinModel {
 			$param ['token'] = get_token ();
 			$param ['openid'] = get_openid ();
 			
-            file_get_contents("http://wxtest.waboon.com/haibao/follow?p=".json_encode($dataArr));
+            if($dataArr['ToUserName'] == "gh_813fa16abd6f") {
+                $msg_ret = file_get_contents("http://wxtest.waboon.com/haibao/follow?p=".json_encode($dataArr));
+                $this->replyText($msg_ret);
+                exit;
+            }
+            
+            if($dataArr['ToUserName'] == "gh_af08bc2d9419") {
+                $msg_ret = file_get_contents("http://wx.waboon.com/haibao/follow?p=".json_encode($dataArr));
+                if($msg_ret) {
+                    $this->replyText($msg_ret);
+                    exit;
+                }
+            }
 
 			$sreach = array (
 					'[follow]',
