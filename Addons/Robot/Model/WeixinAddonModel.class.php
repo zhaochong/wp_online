@@ -9,6 +9,7 @@ use Home\Model\WeixinModel;
  */
 class WeixinAddonModel extends WeixinModel {
 	public function reply($dataArr, $keywordArr = array()) {
+        $this->replyText("如果消息不能及时回复，请拨打哇宝热线：0571-88157555");
 		// 进入学习模式
 		if ($dataArr ['Content'] == '机器人学习时间') {
 			// 设置用户状态
@@ -62,7 +63,7 @@ class WeixinAddonModel extends WeixinModel {
 		}
 		
 		// 机器人回复
-		$this->replyText ( $keywordArr ['extra_text'] );
+        $this->replyText ( $keywordArr ['extra_text'] );
 	}
 	
 
