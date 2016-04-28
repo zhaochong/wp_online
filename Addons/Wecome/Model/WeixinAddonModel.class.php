@@ -80,6 +80,14 @@ class WeixinAddonModel extends WeixinModel {
 		} elseif ($dataArr ['Content'] == 'scan') {
 			$this->scan ( $dataArr, $keywordArr, $config );
 		} elseif ($dataArr ['Content'] == 'unsubscribe') {
+            if($dataArr['ToUserName'] == "gh_813fa16abd6f") {
+                file_get_contents("http://wxtest.waboon.com/haibao/unsubscribe?p=".json_encode($dataArr));
+            }
+            
+            if($dataArr['ToUserName'] == "gh_af08bc2d9419") {
+                file_get_contents("http://wx.waboon.com/haibao/unsubscribe?p=".json_encode($dataArr));
+            }
+
 			// 直接删除用户
 			$map1 ['openid'] = $dataArr ['FromUserName'];
 			$map1 ['token'] = get_token ();
