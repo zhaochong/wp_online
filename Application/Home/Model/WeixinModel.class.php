@@ -67,10 +67,10 @@ class WeixinModel extends Model {
 	/* ========================发送被动响应消息 begin================================== */
 	/* 回复文本消息 */
 	public function replyText($content) {
-        if($msg['content']!='') {
+        //if($msg['content']!='') {
             $msg ['Content'] = $content;
             $this->_replyData ( $msg, 'text' );
-        }
+        //}
 	}
 	/* 回复图片消息 */
 	public function replyImage($media_id) {
